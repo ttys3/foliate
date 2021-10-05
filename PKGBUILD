@@ -1,10 +1,11 @@
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=foliate
-pkgver=2.6.3
+pkgver=2.6.4
 pkgrel=1
 pkgdesc="A simple and modern GTK eBook reader"
 arch=("x86_64")
+groups=('modified')
 url="https://johnfactotum.github.io/foliate/"
 license=("GPL3")
 depends=("gjs" "iso-codes" "webkit2gtk")
@@ -15,10 +16,10 @@ optdepends=(
 	"festival: Text-to-speech support; also voice package needed"
 	"gspell: Spell-checking support"
 	"hyphen: Auto-hyphenation support"
-	"tracker"
+	"tracker3"
 )
-source=("$pkgname-$pkgver.tar.gz"::"https://github.com/johnfactotum/foliate/archive/$pkgver.tar.gz")
-sha256sums=("de685facecb1d014c6041dbad75a5609948a0b18b97c74e31e3a1722bccafbe4")
+source=("$pkgname-$pkgver.tar.gz"::"https://github.com/ttys3/foliate/archive/$pkgver.tar.gz")
+sha256sums=("cd2b339f5ca468cf0aded145caf64823ddaf988d8161ba6331cb2c346f7348eb")
 
 
 build() {
